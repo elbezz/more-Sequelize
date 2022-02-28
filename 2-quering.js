@@ -32,11 +32,11 @@ const User = sequelize.define(
     },
     age: {
       type: DataTypes.INTEGER,
-      default: 21,
+      defaultValue: 21,
     },
     withCodeRocks: {
       type: DataTypes.BOOLEAN,
-      default: true,
+      defaultValue: true,
     },
   },
 
@@ -87,7 +87,7 @@ User.sync({ alter: true })
     // })
     //------------------------------------------------------------------------
     //------------------------------------------------------------------------
-    //using the where close and getting only the username
+    //using the where clause and getting only the username
     // return User.findAll({ attributes: ["username"], where: { age: 25 } });
     //------------------------------------------------------------------------
     //------------------------------------------------------------------------

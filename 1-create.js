@@ -55,11 +55,11 @@ const User = sequelize.define(
     },
     age: {
       type: DataTypes.INTEGER,
-      default: 21,
+      defaultValue: 21,
     },
     withCodeRocks: {
       type: DataTypes.BOOLEAN,
-      default: true,
+      defaultValue: true,
     },
   },
   //Important: above we specified the name of the table will be 'user' but by default it's gonna be pluralized and saved as 'users' table in mysql, so how can we more specific about the name?, also removing the two time columns createdAt and updatedAt that come by default, so we add this:
